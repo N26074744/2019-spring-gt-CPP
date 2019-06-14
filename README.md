@@ -23,9 +23,9 @@
 ## 4. 執行說明:
 
 開啟終端介面，將所在位置移至本專案資料夾，輸入指令”make”，makefile會自動執行編譯程序，產生執行檔CPP.exe。輸入測試資料時，可執行指令:
-
+```
 ./CPP.exe ./Benchmark/資料名稱.txt
-	
+```	
 而可接受的資料檔案格式如下:
 ```
 a. <first node name> <second node name> <capacity> <flow value>
