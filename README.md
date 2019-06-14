@@ -29,14 +29,13 @@
 而可接受的資料檔案格式如下:
 ```
 a. <first node name> <second node name> <capacity> <flow value>
-
 b. <first node name> <second node name>
 
-	example:
-	a.                      b.
-	    a b 1 1                 a b
-	    b c 1 1                 b c
-	    ......                  ......
+example:
+a.                      b.
+    a b 1 1                 a b
+    b c 1 1                 b c
+    ......                  ......
 ```
 除了上述方式，也能執行腳本檔run.sh，能夠批次把Benchmark內的測試資料執行計算結果。
 
