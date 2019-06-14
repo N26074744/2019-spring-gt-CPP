@@ -1,0 +1,5 @@
+Graph file : demo.txt
+Connected : Yes
+Euler cycle : False
+Path : a->c->e->b->e->d->c->b->a
+Distance : 8

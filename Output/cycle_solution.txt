@@ -1,0 +1,5 @@
+Graph file : cycle.txt
+Connected : Yes
+Euler cycle : True
+Path : 0->3->2->1->4->2->5->1->0
+Distance : 8

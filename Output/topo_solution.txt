@@ -1,0 +1,5 @@
+Graph file : topo.txt
+Connected : Yes
+Euler cycle : False
+Path : a->b->c->e->c->d->c->b->a->b->a
+Distance : 10
