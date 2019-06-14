@@ -27,9 +27,12 @@
 ./CPP.exe ./Benchmark/資料名稱.txt
 	
 而可接受的資料檔案格式如下:
+```
 a. <first node name> <second node name> <capacity> <flow value>
+
 b. <first node name> <second node name>
-	```
+```
+
 	example:
 	a.                      b.
 	    a b 1 1                 a b
