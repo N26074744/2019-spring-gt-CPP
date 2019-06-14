@@ -60,9 +60,9 @@ a.                      b.
 ### c. class CPP
 為整體演算法的資料結構，將圖存進結構中便能以內部函式運算
 #### Function:
-       (1) read_graph : 將圖讀入    
-       (2) check_connected : 檢驗圖是否connected   
-       (3) check_Euler : 檢驗圖是否為Euler cycle
+    (1) read_graph : 將圖讀入    
+    (2) check_connected : 檢驗圖是否connected   
+    (3) check_Euler : 檢驗圖是否為Euler cycle
        (4) Find_shortest_path : 找出各點間最短路徑
        (5) cal_minw : 計算奇點間最短路徑權重
        (6) create_Euler : 根據權重，在奇點間的path增加edge
