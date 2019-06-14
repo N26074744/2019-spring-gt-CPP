@@ -61,22 +61,38 @@ a.                      b.
 為整體演算法的資料結構，將圖存進結構中便能以內部函式運算
 #### Function:
     (1) read_graph : 將圖讀入
+    
     (2) check_connected : 檢驗圖是否connected
+    
     (3) check_Euler : 檢驗圖是否為Euler cycle
+    
     (4) Find_shortest_path : 找出各點間最短路徑
+    
     (5) cal_minw : 計算奇點間最短路徑權重
+    
     (6) create_Euler : 根據權重，在奇點間的path增加edge
+    
     (7) Euler_path : 演算法算出最短封閉路徑
+    
     (8) dump_solution : 輸出結果
+    
 #### Object:
     (1) NetworkManager graph : Fake-mininet套件的物件，用於計算最短路徑
+    
     (2) v_list : 紀錄vertex的陣列
+    
     (3) e_list : 紀錄edge的陣列
-    (4) v_index : 根據我自己的結構與Fake-mininet套件的結構，以map來轉換，將vertex名字對應到Fake-mininet中vertex陣列的索引值。
+    
+    (4) v_index : 根據我自己的結構與Fake-mininet套件的結構，以map來轉換，將vertex名字對應到Fake-mininet中vertex陣列的索引值
+    
     (5) odd_v : 紀錄圖中的奇點
+    
     (6) optw_vlist : 經計算權重後的奇點排序。比如有奇點b, c, d, e，經計算後，最短路徑權重總和最小的組合為bd, ce，則陣列排序為b, d, c, e。以便後續要建立edge使用
+    
     (7) shortest_path : 以Fake-mininet套件所建立的各點間最短路徑陣列
+    
     (8) shortest_distance : 各點間最短路徑距離的陣列，即權重值
+    
     (9) final_path : 紀錄最短封閉路徑流程的vertex點
 
 ## 7. 參考資料
