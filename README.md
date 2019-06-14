@@ -53,13 +53,13 @@ a.                      b.
 該演算法原理是藉由每個vertex上必有一個或一個以上的cycle，藉由回溯路徑，以起點為始，在路徑上遇到另一cycle時，先將該cycle走完，回到原cycle之中繼續下去，因此終點也為起始點。
 
 ## 6. 程式說明
-a. class VERTEX
+### a. class VERTEX
 紀錄vertex的名字及與之相聯的edges陣列。
-b. class EDGE
+### b. class EDGE
 紀錄edge的兩端點，與是否被走過的旗標through。
-c. class CPP
+### c. class CPP
 為整體演算法的資料結構，將圖存進結構中便能以內部函式運算
-Function:
+#### Function:
 (1) read_graph : 將圖讀入
 (2) check_connected : 檢驗圖是否connected
 (3) check_Euler : 檢驗圖是否為Euler cycle
@@ -68,7 +68,7 @@ Function:
 (6) create_Euler : 根據權重，在奇點間的path增加edge
 (7) Euler_path : 演算法算出最短封閉路徑
 (8) dump_solution : 輸出結果
- Object:
+#### Object:
 (1) NetworkManager graph : Fake-mininet套件的物件，用於計算最短路徑
 (2) v_list : 紀錄vertex的陣列
 (3) e_list : 紀錄edge的陣列
