@@ -1,13 +1,19 @@
 # 中國郵差問題(Chinese Postman Problem, CPP)
 
 ## 1. 問題:
-    給定一個無向圖，圖中有數個vertices與edges，找出一條最短路徑封閉路徑，皆能經過所有edges至少一次。
+
+給定一個無向圖，圖中有數個vertices與edges，找出一條最短路徑封閉路徑，皆能經過所有edges至少一次。
 
 ## 2. 解析:
+
     無向圖中所有vertices必須找出一條通過所有vertices, edges的最短封閉路徑，而edges能通過多次，因此必須先確認圖是否為connected，確保從任意起點開始皆能到達其他vertex。
+    
     由於圖中的edges可以重複經過，因此可以先假定重複通過的edges，為一條新的edges，即當通過edge次數大於1次時，每多通過一次，vertices之間就多一條edge。
+    
     從任意起點開始，每個點皆能找出一條回到自身的封閉路徑，代表最終解出來的圖是一個Euler cycle，圖中所有vertices的degree皆為偶數。
+    
     但給定的圖不一定是Euler cycle，因此可以找出圖中所有的奇點(degree為奇數的vertex)，奇點數量必為偶數。接著找出成對奇點間的最短路徑，在這條最短路徑上的每個edge，加上一條新edge，路徑上中繼點的degree由於加上了2條edge，degree增加2，奇偶性質不變；而該成對奇點上各加了一條edge，因此degree也被補正為偶數。
+    
     因此經過修正後，新圖上的vertices的degree皆為偶數，必能使用一筆畫定理的演算法，找到一條最短封閉路徑，即為問題所求答案。
 
 ## 3. 文件說明:
