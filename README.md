@@ -1,7 +1,7 @@
 # 中國郵差問題(Chinese Postman Problem, CPP)
 
 1. 問題:
-	給定一個無向圖，圖中有數個vertices與edges，找出一條最短路徑封閉路徑，皆能經過所有edges至少一次。
+>給定一個無向圖，圖中有數個vertices與edges，找出一條最短路徑封閉路徑，皆能經過所有edges至少一次。
 
 2. 解析:
 	無向圖中所有vertices必須找出一條通過所有vertices, edges的最短封閉路徑，而edges能通過多次，因此必須先確認圖是否為connected，確保從任意起點開始皆能到達其他vertex。
